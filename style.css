@@ -1,0 +1,291 @@
+
+
+.img-star{
+    height: 750px;
+    width: 100%;
+    z-index: -1000000;
+    background-image: linear-gradient(rgba(11, 11, 11, 0.67),rgba(0, 0, 0, 0.58)),url(star.jpg);
+    
+}
+
+a{
+    
+    text-decoration: none;
+    color: black;
+    
+}
+.game-body{
+    
+    position: fixed;
+    height: 550px;
+    width: 1150px;
+    margin-left: 90px;
+    margin-right: auto;
+    z-index: 9;
+    background-color: white;
+    box-shadow: 0px 4px 30px white;
+    border: 5px solid grey;
+    margin-top: -700px;
+}
+
+.first-first, .first-second, .first-third, .second-first, .second-second, .second-third, .third-first, .third-second, .third-third{
+    
+    height: 100px;
+    width:160px;
+    top: 200px;
+    text-align: center;
+    font-size: 425%;
+    
+}
+
+.first-first, .first-second, .first-third{
+    position: absolute;
+}
+.first-first{
+   
+    
+}
+.first-second{
+    margin-left: 160px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    
+}
+.first-third{
+    margin-left: 320px;
+    
+}
+.second-first{
+    position: absolute;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 100px;
+   border-top: 1px solid black;
+    
+}
+.second-second {
+    
+    margin-left: 160px;
+    margin-top: 100px;
+    position: absolute;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.second-third {
+    
+    margin-left: 320px;
+    margin-top: 100px;
+    position: absolute;
+    border-top: 1px solid black;
+}
+
+
+.third-first{
+    position: absolute;
+    margin-top: 200px;
+
+    border-top: 1px solid black;
+}
+.third-second {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 160px;
+    border-right: 1px solid black;
+      border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+.third-third{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 320px;
+    border-top: 1px solid black;
+}
+.first-first, .first-second, .first-third, .second-first, .second-second, .second-third, .third-first, .third-second, .third-third{
+    
+    left: 100px;
+}
+
+
+.check {
+    position: absolute;
+    width: 190px;
+    height: 80px;
+    margin-left: 850px;
+    margin-top: 240px;
+}
+
+.cross, .circle {
+    width: 95px;
+    height: 80px;
+    text-align: center;
+    font-size: 425%;
+}
+.circle{
+    float:right;
+    margin-top: -80px;
+    border-left: 1px solid black;
+    
+}
+
+.score {
+    height: 100px;
+    width:220px;
+    color: blue;
+    margin-left: 850px;
+    margin-top: 50px;
+}
+.player-1 {
+    height: 50px;
+   
+    margin-bottom: 1px;
+    padding-left: 25px;
+    font-size: 195%;
+     font-family: 'Lobster', cursive;
+    
+}
+.player-2 {
+    height: 50px;
+    margin-bottom: 1px;
+    padding-left: 25px;
+     font-size: 195%;
+     font-family: 'Lobster', cursive;
+}
+.winner {
+    
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    font-size: 195%;
+    margin-left: 40%;
+    font-family: 'Lobster', cursive;
+    
+}
+
+.reset {
+    
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin-left: 895px;
+    margin-top: 250px;
+    border-radius: 50%; 
+    text-align: center;
+    font-size: 110%;
+    color: aliceblue;
+}
+ 
+.reset:hover {
+    
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    
+}
+.fade  {
+    transition: background-color 2s; 
+    background-color: wheat;
+    
+}
+.fade2  {
+    background-color: wheat;
+    
+}
+
+.hide {
+    
+    color:white;
+}
+
+@keyframes fadeIn {
+
+}
+
+
+.first-row-line,
+.second-row-line,
+.third-row-line,
+.left-diaog,
+.right-diaog,
+.first-col-line,
+.second-col-line,
+.third-col-line {
+    position: fixed;
+    height: 250px;
+    width: 3px;
+    background-color: red;
+    display: none;
+ 
+    
+    
+}
+
+.first-col-line {
+    margin-top: 180px;
+    margin-left: 180px;
+}
+
+.second-col-line {
+    
+    margin-left: 340px;
+    margin-top: 180px;
+    
+}
+
+.third-col-line {
+    
+    margin-left: 500px;
+    margin-top: 180px;
+}
+
+.first-row-line,
+.second-row-line,
+.third-row-line {
+    
+    transform: rotate(90deg);
+}
+
+
+.first-row-line {
+    
+    margin-left: 340px;
+    height: 370px;
+    margin-top: 15px;
+    
+}
+
+.second-row-line {
+        margin-left: 340px;
+    height: 370px;
+    margin-top: 115px;
+    
+}
+.third-row-line {
+        margin-left: 340px;
+    height: 370px;
+    margin-top: 215px;
+    
+}
+
+.left-diaog {
+    transform: rotate(-58deg);
+    margin-left: 350px;
+    margin-top: 40px;
+    height: 550px;
+}
+
+.right-diaog {
+    
+    
+    transform: rotate(58deg);
+    margin-left: 350px;
+    margin-top: 30px;
+    height: 550px;
+    
+}
+
+.show {
+    
+    display: block;
+}
